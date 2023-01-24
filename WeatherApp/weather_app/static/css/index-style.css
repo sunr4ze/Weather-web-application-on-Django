@@ -1,3 +1,18 @@
-.header1{
-    display: flex;
+.header-image{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.logo{
+    color: #00FFFF;
+    text-decoration: blink;
+    font-size: 25px;
+    text-shadow: #cccccc -1px -1px 3px;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+.offset-1{
+    margin-top: 40px;
+    margin-left: 0px;
 }
