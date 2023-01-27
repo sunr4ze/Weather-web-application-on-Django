@@ -1,6 +1,12 @@
+{% load static %}
+
 .header-image{
     margin-top: 15px;
     margin-left: 25px;
+}
+
+h1{
+    font-size: 20px;
 }
 
 .logo{
@@ -10,9 +16,69 @@
     text-shadow: #cccccc -1px -1px 3px;
     margin-left: 10px;
     margin-top: 16px;
+    margin-bottom: 6px;
+    font-weight: bold;
+	color: black;
+	text-shadow:
+		-0   -2px 0   #00FFD0,
+		 0   -2px 0   #00FFD0,
+		-0    2px 0   #00FFD0,
+		 0    2px 0   #00FFD0,
+		-2px -0   0   #00FFD0,
+		 2px -0   0   #00FFD0,
+		-2px  0   0   #00FFD0,
+		 2px  0   0   #00FFD0,
+		-1px -2px 0   #00FFD0,
+		 1px -2px 0   #00FFD0,
+		-1px  2px 0   #00FFD0,
+		 1px  2px 0   #00FFD0,
+		-2px -1px 0   #00FFD0,
+		 2px -1px 0   #00FFD0,
+		-2px  1px 0   #00FFD0,
+		 2px  1px 0   #00FFD0,
+		-2px -2px 0   #00FFD0,
+		 2px -2px 0   #00FFD0,
+		-2px  2px 0   #00FFD0,
+		 2px  2px 0   #00FFD0,
+		-2px -2px 0   #00FFD0,
+		 2px -2px 0   #00FFD0,
+		-2px  2px 0   #00FFD0,
+		 2px  2px 0   #00FFD0;
 }
 
 .offset-1{
     margin-top: 40px;
     margin-left: 0px;
 }
+
+.info{
+    width: 200px;
+}
+
+.jpg{
+    margin-top: 40px;
+}
+
+h2{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.elem{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.block{
+    display: flex;
+    width: 400px;
+    border-radius: 25px;
+    background-color: Goldenrod;
+    border: 5px double black;
+}
+
+
+
+
