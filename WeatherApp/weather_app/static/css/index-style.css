@@ -5,10 +5,6 @@
     margin-left: 25px;
 }
 
-h1{
-    font-size: 20px;
-}
-
 .logo{
     color: #00FFFF;
     text-decoration: blink;
@@ -56,12 +52,7 @@ h1{
 }
 
 .jpg{
-    margin-top: 40px;
-}
-
-h2{
-    font-size: 20px;
-    margin-left: 15px;
+    margin-top: 60px;
 }
 
 .elem{
@@ -76,8 +67,40 @@ h2{
     width: 400px;
     border-radius: 25px;
     background-color: Goldenrod;
-    border: 5px double black;
+    border: 3px solid black;
+    margin-right: 200px;
 }
+
+.img-thumbnail{
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.block2{
+    display: flex;
+    width: 300px;
+    border: 1px solid red;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.popular{
+    font-size: 25px;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+}
+
+.cities{
+    display: flex;
+    margin-left: 30px;
+}
+
 
 
 

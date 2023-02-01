@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import requests
 from . import city_ident
+from .forms import CityForm
 
 def index(request):
     appid = '431b68bea085d48610d7d1eade1b7771'
@@ -9,7 +10,9 @@ def index(request):
     print(city)
     res = requests.get(url.format(city)).json()
     print(res)
-    if city != '':
+    if request.method=='POST':
+        form = CityForm(request.POST)
+        form.save()
         city_info = {
             'city': city,
             'temp': res["main"]["temp"],
@@ -18,8 +21,8 @@ def index(request):
             'humidity': res["main"]["humidity"],
             'clouds': res["clouds"]["all"]
         }
-
-        context = {'info': city_info}
+        form = CityForm()
+        context = {'info': city_info, 'form': form}
         return render(request, 'weather_app/index.html', context)
     else:
         city = 'Minsk'
